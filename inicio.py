@@ -13,6 +13,7 @@ from modulo_loops import *
 from modulo_functions import *
 from modulo_clases import *
 from modulo_exeptions import *
+from modulo_modules import *
 
 
 
@@ -299,3 +300,24 @@ suma_dos_numeros_3(4, "hola")
 suma_dos_numeros_4(3, 7)
 
 suma_dos_numeros_4(3, "7")
+
+
+# MODULO MODULES  
+
+imprime_numero_pi()
+
+imprime_numero_pi_con_errors()
+
+imprime_numero_pi_2()
+
+imprime_valor_desde_modulo("Hola")
+
+imprime_valor_desde_modulo(3)
+
+imprime_valor_desde_un_modulo_2("Holita")
+
+imprime_valor_desde_un_modulo_2(4)
+
+suma_tres_valores_desde_un_modulo(1, 2, 3)
+
+suma_tres_valores_desde_un_modulo_2(4, 5, 6)
