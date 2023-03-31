@@ -14,6 +14,14 @@ from modulo_functions import *
 from modulo_clases import *
 from modulo_exeptions import *
 from modulo_modules import *
+from modulo_dates import *
+from modulo_list_comprehension import *
+from modulo_lambdas import *
+from modulo_higher_order_functions import *
+from modulo_errors import *
+from modulo_file_handling import *
+from functools import reduce 
+import datetime
 
 
 
@@ -321,3 +329,108 @@ imprime_valor_desde_un_modulo_2(4)
 suma_tres_valores_desde_un_modulo(1, 2, 3)
 
 suma_tres_valores_desde_un_modulo_2(4, 5, 6)
+
+# MODULO DATES 
+now = datetime.datetime.now()
+
+imprime_fecha_hora_sellotiempo(now)
+
+imprime_fecha(now)
+
+imprime_hora(now)
+
+imprime_sello_tiempo(now)
+
+imprime_fecha_que_damos(2022, 3, 31)
+
+imprime_hora_que_damos(15, 3, 13)
+
+imprime_fecha_de_hoy()
+
+imprime_fecha_que_damos(2000, 1, 31)
+
+suma_resta_tiempos()
+
+imprime_una_lista()
+
+imprime_rango_de_ocho_elementos()
+
+imprime_rango_de_ocho_elementos_2()
+
+# MODULO modulo_lambdas
+
+print("--------------------------------------")
+
+print(suma_tres_valores(5)(2, 4))
+
+print("--------------------------------------")
+
+# MODULO modulo_higher_order_funciones 
+
+suma_valores(5, 2, suma_1)
+
+suma_valores(5, 2, suma_2)
+
+sum_closure = sum_1(1)
+print(sum_closure(5))
+
+print(sum_1(10)(3))
+
+# Map
+
+listado = [2, 5, 3, 15, 12, 11, 19, 23]
+
+print("--------------------------------------")
+print(listado)
+print("--------------------------------------")
+
+print("--------------------------------------")
+print(list(map(multiplica, listado)))
+print("--------------------------------------")
+
+print("--------------------------------------")
+print(list(map(lambda x: x * 2, listado)))
+print("--------------------------------------")
+
+# Filter 
+
+print("--------------------------------------")
+print(list(filter(filtar_numero_mas_grandes_que_diez, listado)))
+print("--------------------------------------")
+
+print("--------------------------------------")
+print(list(filter(lambda x: x > 10, listado)))
+print("--------------------------------------")
+
+# Reduce 
+print("--------------------------------------")
+print(reduce(sumar_dos_valores_dados, listado))
+print("--------------------------------------")
+
+# MODULO modulo_errors
+
+name_error()
+
+index_error()
+
+module_not_found_error()
+
+attribute_error()
+
+key_error()
+
+type_error()
+
+import_error()
+
+value_error()
+
+zero_division_error()
+
+# MODULO modulo_file_handling
+
+abre_archivo()
+
+leer_archivo()
+
+agregar_archivo()
